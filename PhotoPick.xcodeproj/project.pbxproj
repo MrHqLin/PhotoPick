@@ -16,6 +16,7 @@
 		3E3CE47C1FBD5C5700B0D5BD /* PhotoPickTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E3CE47B1FBD5C5700B0D5BD /* PhotoPickTests.m */; };
 		3E3CE4871FBD5C5700B0D5BD /* PhotoPickUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E3CE4861FBD5C5700B0D5BD /* PhotoPickUITests.m */; };
 		3E3CE4971FBD608800B0D5BD /* LHQAblumTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E3CE4961FBD608800B0D5BD /* LHQAblumTool.m */; };
+		3E3CE49B1FBD95B700B0D5BD /* LHQCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E3CE49A1FBD95B700B0D5BD /* LHQCollectionViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,8 @@
 		3E3CE4881FBD5C5700B0D5BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3E3CE4951FBD608800B0D5BD /* LHQAblumTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LHQAblumTool.h; sourceTree = "<group>"; };
 		3E3CE4961FBD608800B0D5BD /* LHQAblumTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LHQAblumTool.m; sourceTree = "<group>"; };
+		3E3CE4991FBD95B700B0D5BD /* LHQCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LHQCollectionViewCell.h; sourceTree = "<group>"; };
+		3E3CE49A1FBD95B700B0D5BD /* LHQCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LHQCollectionViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +107,7 @@
 		3E3CE4611FBD5C5400B0D5BD /* PhotoPick */ = {
 			isa = PBXGroup;
 			children = (
+				3E3CE4981FBD958900B0D5BD /* cell */,
 				3E3CE4941FBD600C00B0D5BD /* model */,
 				3E3CE4621FBD5C5400B0D5BD /* AppDelegate.h */,
 				3E3CE4631FBD5C5400B0D5BD /* AppDelegate.m */,
@@ -143,6 +147,15 @@
 				3E3CE4961FBD608800B0D5BD /* LHQAblumTool.m */,
 			);
 			path = model;
+			sourceTree = "<group>";
+		};
+		3E3CE4981FBD958900B0D5BD /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				3E3CE4991FBD95B700B0D5BD /* LHQCollectionViewCell.h */,
+				3E3CE49A1FBD95B700B0D5BD /* LHQCollectionViewCell.m */,
+			);
+			path = cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -278,6 +291,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E3CE49B1FBD95B700B0D5BD /* LHQCollectionViewCell.m in Sources */,
 				3E3CE4671FBD5C5500B0D5BD /* ViewController.m in Sources */,
 				3E3CE4971FBD608800B0D5BD /* LHQAblumTool.m in Sources */,
 				3E3CE4721FBD5C5500B0D5BD /* main.m in Sources */,

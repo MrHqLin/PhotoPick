@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "LHQAblumTool.h"
+#import "LHQCollectionViewCell.h"
 
 @interface ViewController ()<UICollectionViewDelegate,UICollectionViewDataSource>
 
@@ -22,6 +23,7 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
     
+    self.dataArr = [[NSMutableArray alloc]init];
     UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc]init];
     layout.minimumInteritemSpacing = 5; //cell之间的间距
     layout.minimumLineSpacing = 5; //行间距
@@ -33,19 +35,22 @@
     self.collectionView.dataSource = self;
     [self.view addSubview:self.collectionView];
     
-    [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:@"PhotoCell"];
+    [self.collectionView registerClass:[LHQCollectionViewCell class] forCellWithReuseIdentifier:@"PhotoCell"];
 }
 
 #pragma mark -- UICollectionViewDataSource
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
-    return 5;
+    return self.dataArr.count + 1;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"PhotoCell" forIndexPath:indexPath];
-    cell.backgroundColor = [UIColor orangeColor];
+    LHQCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"PhotoCell" forIndexPath:indexPath];
+//    cell.backgroundColor = [UIColor orangeColor];
+    if (self.dataArr.count == indexPath.row) {
+        cell.photoImage.image = [UIImage imageNamed:@"add_os"];
+    }
     return cell;
 }
 
