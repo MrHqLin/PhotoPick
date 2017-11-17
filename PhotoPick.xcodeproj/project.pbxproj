@@ -17,6 +17,12 @@
 		3E3CE4871FBD5C5700B0D5BD /* PhotoPickUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E3CE4861FBD5C5700B0D5BD /* PhotoPickUITests.m */; };
 		3E3CE4971FBD608800B0D5BD /* LHQAblumTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E3CE4961FBD608800B0D5BD /* LHQAblumTool.m */; };
 		3E3CE49B1FBD95B700B0D5BD /* LHQCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E3CE49A1FBD95B700B0D5BD /* LHQCollectionViewCell.m */; };
+		3E4E8DFC1FBE87B400916199 /* PhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E4E8DFB1FBE87B400916199 /* PhotoViewController.m */; };
+		3E4E8DFF1FBEDAC900916199 /* PhotoListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E4E8DFE1FBEDAC900916199 /* PhotoListViewController.m */; };
+		3E4E8E021FBEE1B500916199 /* LHQImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E4E8E011FBEE1B500916199 /* LHQImageViewController.m */; };
+		7CEE10998B4C531B23F69169 /* libPods-PhotoPickTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FA379035C13034B5D1C34A3 /* libPods-PhotoPickTests.a */; };
+		A02BB71C60BBBDAB8C7142F3 /* libPods-PhotoPick.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C2708363A11D32C452FBD9F /* libPods-PhotoPick.a */; };
+		F8C1B63152AAAF44711AE7D4 /* libPods-PhotoPickUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B2856445B2253E4D319C28F /* libPods-PhotoPickUITests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +43,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2C2708363A11D32C452FBD9F /* libPods-PhotoPick.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PhotoPick.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B2856445B2253E4D319C28F /* libPods-PhotoPickUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PhotoPickUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E3CE45F1FBD5C5400B0D5BD /* PhotoPick.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoPick.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E3CE4621FBD5C5400B0D5BD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3E3CE4631FBD5C5400B0D5BD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -57,6 +65,20 @@
 		3E3CE4961FBD608800B0D5BD /* LHQAblumTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LHQAblumTool.m; sourceTree = "<group>"; };
 		3E3CE4991FBD95B700B0D5BD /* LHQCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LHQCollectionViewCell.h; sourceTree = "<group>"; };
 		3E3CE49A1FBD95B700B0D5BD /* LHQCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LHQCollectionViewCell.m; sourceTree = "<group>"; };
+		3E4E8DF91FBE81FE00916199 /* PhotoPickPrefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhotoPickPrefix.pch; sourceTree = "<group>"; };
+		3E4E8DFA1FBE87B400916199 /* PhotoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhotoViewController.h; sourceTree = "<group>"; };
+		3E4E8DFB1FBE87B400916199 /* PhotoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotoViewController.m; sourceTree = "<group>"; };
+		3E4E8DFD1FBEDAC900916199 /* PhotoListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhotoListViewController.h; sourceTree = "<group>"; };
+		3E4E8DFE1FBEDAC900916199 /* PhotoListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotoListViewController.m; sourceTree = "<group>"; };
+		3E4E8E001FBEE1B500916199 /* LHQImageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LHQImageViewController.h; sourceTree = "<group>"; };
+		3E4E8E011FBEE1B500916199 /* LHQImageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LHQImageViewController.m; sourceTree = "<group>"; };
+		4FA379035C13034B5D1C34A3 /* libPods-PhotoPickTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PhotoPickTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		67CCE729C80566CC95AE85C3 /* Pods-PhotoPickUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoPickUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PhotoPickUITests/Pods-PhotoPickUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		743BD7D046E9D92FB5523C4A /* Pods-PhotoPick.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoPick.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PhotoPick/Pods-PhotoPick.debug.xcconfig"; sourceTree = "<group>"; };
+		973AE825FC9B5738BCC3EF38 /* Pods-PhotoPickTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoPickTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PhotoPickTests/Pods-PhotoPickTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A6E0134D360D2B5BAE497B37 /* Pods-PhotoPickTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoPickTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PhotoPickTests/Pods-PhotoPickTests.release.xcconfig"; sourceTree = "<group>"; };
+		DC6F1E8389A6B8C0EA64A9DE /* Pods-PhotoPick.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoPick.release.xcconfig"; path = "Pods/Target Support Files/Pods-PhotoPick/Pods-PhotoPick.release.xcconfig"; sourceTree = "<group>"; };
+		EBAE6E392453466A54BEFC2E /* Pods-PhotoPickUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoPickUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PhotoPickUITests/Pods-PhotoPickUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A02BB71C60BBBDAB8C7142F3 /* libPods-PhotoPick.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7CEE10998B4C531B23F69169 /* libPods-PhotoPickTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8C1B63152AAAF44711AE7D4 /* libPods-PhotoPickUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +116,8 @@
 				3E3CE47A1FBD5C5700B0D5BD /* PhotoPickTests */,
 				3E3CE4851FBD5C5700B0D5BD /* PhotoPickUITests */,
 				3E3CE4601FBD5C5400B0D5BD /* Products */,
+				DE37EFAD01B49351C80AD3DD /* Pods */,
+				C5AEC21DCDF7C370C7BA2BD5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -113,6 +140,12 @@
 				3E3CE4631FBD5C5400B0D5BD /* AppDelegate.m */,
 				3E3CE4651FBD5C5400B0D5BD /* ViewController.h */,
 				3E3CE4661FBD5C5500B0D5BD /* ViewController.m */,
+				3E4E8E031FBEE1DE00916199 /* View */,
+				3E4E8DFA1FBE87B400916199 /* PhotoViewController.h */,
+				3E4E8DFB1FBE87B400916199 /* PhotoViewController.m */,
+				3E4E8DFD1FBEDAC900916199 /* PhotoListViewController.h */,
+				3E4E8DFE1FBEDAC900916199 /* PhotoListViewController.m */,
+				3E4E8DF91FBE81FE00916199 /* PhotoPickPrefix.pch */,
 				3E3CE4681FBD5C5500B0D5BD /* Main.storyboard */,
 				3E3CE46B1FBD5C5500B0D5BD /* Assets.xcassets */,
 				3E3CE46D1FBD5C5500B0D5BD /* LaunchScreen.storyboard */,
@@ -158,6 +191,38 @@
 			path = cell;
 			sourceTree = "<group>";
 		};
+		3E4E8E031FBEE1DE00916199 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3E4E8E001FBEE1B500916199 /* LHQImageViewController.h */,
+				3E4E8E011FBEE1B500916199 /* LHQImageViewController.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C5AEC21DCDF7C370C7BA2BD5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2C2708363A11D32C452FBD9F /* libPods-PhotoPick.a */,
+				4FA379035C13034B5D1C34A3 /* libPods-PhotoPickTests.a */,
+				3B2856445B2253E4D319C28F /* libPods-PhotoPickUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DE37EFAD01B49351C80AD3DD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				743BD7D046E9D92FB5523C4A /* Pods-PhotoPick.debug.xcconfig */,
+				DC6F1E8389A6B8C0EA64A9DE /* Pods-PhotoPick.release.xcconfig */,
+				973AE825FC9B5738BCC3EF38 /* Pods-PhotoPickTests.debug.xcconfig */,
+				A6E0134D360D2B5BAE497B37 /* Pods-PhotoPickTests.release.xcconfig */,
+				67CCE729C80566CC95AE85C3 /* Pods-PhotoPickUITests.debug.xcconfig */,
+				EBAE6E392453466A54BEFC2E /* Pods-PhotoPickUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -165,9 +230,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3E3CE48B1FBD5C5700B0D5BD /* Build configuration list for PBXNativeTarget "PhotoPick" */;
 			buildPhases = (
+				A091AEA6C42FEE21E79F5C5F /* [CP] Check Pods Manifest.lock */,
 				3E3CE45B1FBD5C5400B0D5BD /* Sources */,
 				3E3CE45C1FBD5C5400B0D5BD /* Frameworks */,
 				3E3CE45D1FBD5C5400B0D5BD /* Resources */,
+				634A47CA88A786B5F271DE96 /* [CP] Embed Pods Frameworks */,
+				26025CA00D9EB8C9E0D78106 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -182,9 +250,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3E3CE48E1FBD5C5700B0D5BD /* Build configuration list for PBXNativeTarget "PhotoPickTests" */;
 			buildPhases = (
+				AAA4A2EDD25F17942D6AAF66 /* [CP] Check Pods Manifest.lock */,
 				3E3CE4731FBD5C5700B0D5BD /* Sources */,
 				3E3CE4741FBD5C5700B0D5BD /* Frameworks */,
 				3E3CE4751FBD5C5700B0D5BD /* Resources */,
+				4EE0417EEDDA6596C164D1CD /* [CP] Embed Pods Frameworks */,
+				C2F3C846606777DE4D7E86B4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -200,9 +271,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3E3CE4911FBD5C5700B0D5BD /* Build configuration list for PBXNativeTarget "PhotoPickUITests" */;
 			buildPhases = (
+				683B2E65211863CB3E4FA606 /* [CP] Check Pods Manifest.lock */,
 				3E3CE47E1FBD5C5700B0D5BD /* Sources */,
 				3E3CE47F1FBD5C5700B0D5BD /* Frameworks */,
 				3E3CE4801FBD5C5700B0D5BD /* Resources */,
+				464E6551E7C6CCA91E269CDF /* [CP] Embed Pods Frameworks */,
+				DB9DB196BB94F8FAA629A835 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -286,6 +360,144 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		26025CA00D9EB8C9E0D78106 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PhotoPick/Pods-PhotoPick-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		464E6551E7C6CCA91E269CDF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PhotoPickUITests/Pods-PhotoPickUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4EE0417EEDDA6596C164D1CD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PhotoPickTests/Pods-PhotoPickTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		634A47CA88A786B5F271DE96 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PhotoPick/Pods-PhotoPick-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		683B2E65211863CB3E4FA606 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A091AEA6C42FEE21E79F5C5F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		AAA4A2EDD25F17942D6AAF66 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C2F3C846606777DE4D7E86B4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PhotoPickTests/Pods-PhotoPickTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DB9DB196BB94F8FAA629A835 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PhotoPickUITests/Pods-PhotoPickUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3E3CE45B1FBD5C5400B0D5BD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -293,7 +505,10 @@
 			files = (
 				3E3CE49B1FBD95B700B0D5BD /* LHQCollectionViewCell.m in Sources */,
 				3E3CE4671FBD5C5500B0D5BD /* ViewController.m in Sources */,
+				3E4E8E021FBEE1B500916199 /* LHQImageViewController.m in Sources */,
 				3E3CE4971FBD608800B0D5BD /* LHQAblumTool.m in Sources */,
+				3E4E8DFC1FBE87B400916199 /* PhotoViewController.m in Sources */,
+				3E4E8DFF1FBEDAC900916199 /* PhotoListViewController.m in Sources */,
 				3E3CE4721FBD5C5500B0D5BD /* main.m in Sources */,
 				3E3CE4641FBD5C5400B0D5BD /* AppDelegate.m in Sources */,
 			);
@@ -456,10 +671,13 @@
 		};
 		3E3CE48C1FBD5C5700B0D5BD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 743BD7D046E9D92FB5523C4A /* Pods-PhotoPick.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TDPT6UAW97;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = /Users/lalahuo/Desktop/PhotoPick/PhotoPick/PhotoPickPrefix.pch;
 				INFOPLIST_FILE = PhotoPick/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = lin.com.PhotoPick;
@@ -470,10 +688,13 @@
 		};
 		3E3CE48D1FBD5C5700B0D5BD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC6F1E8389A6B8C0EA64A9DE /* Pods-PhotoPick.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TDPT6UAW97;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = /Users/lalahuo/Desktop/PhotoPick/PhotoPick/PhotoPickPrefix.pch;
 				INFOPLIST_FILE = PhotoPick/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = lin.com.PhotoPick;
@@ -484,6 +705,7 @@
 		};
 		3E3CE48F1FBD5C5700B0D5BD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 973AE825FC9B5738BCC3EF38 /* Pods-PhotoPickTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -499,6 +721,7 @@
 		};
 		3E3CE4901FBD5C5700B0D5BD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A6E0134D360D2B5BAE497B37 /* Pods-PhotoPickTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -514,6 +737,7 @@
 		};
 		3E3CE4921FBD5C5700B0D5BD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 67CCE729C80566CC95AE85C3 /* Pods-PhotoPickUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TDPT6UAW97;
@@ -528,6 +752,7 @@
 		};
 		3E3CE4931FBD5C5700B0D5BD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EBAE6E392453466A54BEFC2E /* Pods-PhotoPickUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TDPT6UAW97;

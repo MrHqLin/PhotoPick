@@ -1,0 +1,22 @@
+//
+//  PhotoPickPrefix.pch
+//  PhotoPick
+//
+//  Created by Hq.Lin on 2017/11/17.
+//  Copyright © 2017年 lin. All rights reserved.
+//
+
+#ifndef PhotoPickPrefix_pch
+#define PhotoPickPrefix_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* PhotoPickPrefix_pch */
+
+
+#import <Masonry.h>
+#import <Photos/Photos.h>
+
+#define SelfView_W [[UIScreen mainScreen] bounds].size.width
+#define SelfView_H [[UIScreen mainScreen] bounds].size.height

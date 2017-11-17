@@ -9,6 +9,9 @@
 #import "ViewController.h"
 #import "LHQAblumTool.h"
 #import "LHQCollectionViewCell.h"
+#import "PhotoViewController.h"
+#import "PhotoListViewController.h"
+#import "LHQImageViewController.h"
 
 @interface ViewController ()<UICollectionViewDelegate,UICollectionViewDataSource>
 
@@ -21,13 +24,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.navigationItem.title = @"momoda";
     self.view.backgroundColor = [UIColor whiteColor];
     
     self.dataArr = [[NSMutableArray alloc]init];
     UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc]init];
-    layout.minimumInteritemSpacing = 5; //cell之间的间距
-    layout.minimumLineSpacing = 5; //行间距
-    layout.itemSize = CGSizeMake(120, 100);
+    layout.sectionInset = UIEdgeInsetsMake(10, 10, 10, 10);
+    layout.itemSize = CGSizeMake(80, 80);
     
     self.collectionView = [[UICollectionView alloc]initWithFrame:CGRectMake(0, 64, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height-64) collectionViewLayout:layout];
     self.collectionView.backgroundColor = [UIColor whiteColor];
@@ -47,14 +50,24 @@
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     LHQCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"PhotoCell" forIndexPath:indexPath];
-//    cell.backgroundColor = [UIColor orangeColor];
     if (self.dataArr.count == indexPath.row) {
         cell.photoImage.image = [UIImage imageNamed:@"add_os"];
+        cell.selectBtn.hidden = YES;
     }
     return cell;
 }
 
-
+#pragma mark -- UICollectionViewDelegate
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (self.dataArr.count == indexPath.row) {
+        PhotoViewController *photoVc = [[PhotoViewController alloc]init];
+        UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:photoVc];
+        [self presentViewController:nav animated:YES completion:nil];
+//        LHQImageViewController *imageVc = [[LHQImageViewController alloc]init];
+//        [self presentViewController:imageVc animated:YES completion:nil];
+    }
+}
 
 
 

@@ -131,7 +131,7 @@
     PHImageRequestOptions *option = [[PHImageRequestOptions alloc]init];
     option.resizeMode = resizeMode;//控制照片尺寸
     option.networkAccessAllowed = YES;
-    [[PHCachingImageManager defaultManager] requestImageForAsset:asset targetSize:size contentMode:PHImageContentModeAspectFit options:option resultHandler:^(UIImage * _Nullable result, NSDictionary * _Nullable info) {
+    [[PHCachingImageManager defaultManager] requestImageForAsset:asset targetSize:size contentMode:PHImageContentModeDefault options:option resultHandler:^(UIImage * _Nullable result, NSDictionary * _Nullable info) {
         completion(result);
     }];
 }

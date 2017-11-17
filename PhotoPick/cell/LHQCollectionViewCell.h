@@ -8,8 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
+typedef void(^selectPhotosBlock)(UIButton *btn);
+
 @interface LHQCollectionViewCell : UICollectionViewCell
 
 @property(nonatomic,strong) UIImageView *photoImage;
+@property(nonatomic,strong) UIButton    *selectBtn;
+@property(nonatomic,strong) selectPhotosBlock selectBlock;
 
 @end

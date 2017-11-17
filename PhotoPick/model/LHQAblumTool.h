@@ -7,7 +7,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <Photos/Photos.h>
 
 @interface LHQAblumList : NSObject
 
