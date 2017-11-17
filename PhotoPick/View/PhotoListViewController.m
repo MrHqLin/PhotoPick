@@ -7,6 +7,7 @@
 //
 
 #import "PhotoListViewController.h"
+#import "PhotoViewController.h"
 
 @interface PhotoListViewController ()
 
@@ -19,9 +20,16 @@
     self.navigationItem.title = @"photoList";
     self.view.backgroundColor = [UIColor whiteColor];
     
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithTitle:@"取消" style:UIBarButtonItemStylePlain target:self action:@selector(cancel)];
 
 }
 
+
+#pragma mark -- cancel
+-(void)cancel
+{
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
 
 
 @end

@@ -24,7 +24,7 @@
 
 @end
 
-static NSString *photoCell = @"photosCell";
+static NSString *photoCell = @"photosCell_view";
 @implementation PhotoViewController
 
 
@@ -38,11 +38,11 @@ static NSString *photoCell = @"photosCell";
     self.selectPhotosArray = [[NSMutableArray alloc]init];
     self.dataArray = [[NSMutableArray alloc]init];
     self.dataArray = [[LHQAblumTool shareAblumTool] getAllAssetInPhotoAblumWithAscending:YES];
+    NSLog(@"data %@",self.dataArray);
     
     //控件
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithTitle:@"清除" style:UIBarButtonItemStylePlain target:self action:@selector(cleanSelect)];
-    self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"backk"
-                                                                             style:UIBarButtonItemStylePlain target:nil action:nil];
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"back"] style:UIBarButtonItemStylePlain target:self action:@selector(back)];
     
     UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc]init];
     layout.itemSize = CGSizeMake((SelfView_W-50)/4, (SelfView_W-50)/4);
@@ -90,13 +90,22 @@ static NSString *photoCell = @"photosCell";
     }
     [self.completeBtn setTitle:@"完成(0)" forState:UIControlStateNormal];
     [self.selectPhotosArray removeAllObjects];
-   
+}
+#pragma mark -- 完成
+-(void)completeTap:(UIButton *)sender
+{
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+#pragma mark -- 展示
+-(void)showPhotoTap:(UIButton *)sender
+{
+    
 }
 #pragma mark -- back
 -(void)back
 {
-    PhotoListViewController *listVc = [[PhotoListViewController alloc]init];
-    [self.navigationController pushViewController:listVc animated:YES];
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 #pragma mark -- UICollectionViewDataSource
@@ -174,6 +183,7 @@ static NSString *photoCell = @"photosCell";
         _completeBtn = [UIButton buttonWithType:UIButtonTypeCustom];
         _completeBtn.titleLabel.font = [UIFont systemFontOfSize:12];
         [_completeBtn setTitle:@"完成(0)" forState:UIControlStateNormal];
+        [_completeBtn addTarget:self action:@selector(completeTap:) forControlEvents:UIControlEventTouchUpInside];
         [_completeBtn setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
     }
     return _completeBtn;
@@ -183,6 +193,7 @@ static NSString *photoCell = @"photosCell";
     if (!_showPhotoBtn) {
         _showPhotoBtn = [UIButton buttonWithType:UIButtonTypeCustom];
         _showPhotoBtn.titleLabel.font = [UIFont systemFontOfSize:12];
+        [_showPhotoBtn addTarget:self action:@selector(showPhotoTap:) forControlEvents:UIControlEventTouchUpInside];
         [_showPhotoBtn setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
         [_showPhotoBtn setTitle:@"预览" forState:UIControlStateNormal];
     }

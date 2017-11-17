@@ -11,7 +11,7 @@
 #import "LHQCollectionViewCell.h"
 #import "PhotoViewController.h"
 #import "PhotoListViewController.h"
-#import "LHQImageViewController.h"
+
 
 @interface ViewController ()<UICollectionViewDelegate,UICollectionViewDataSource>
 
@@ -61,11 +61,18 @@
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
     if (self.dataArr.count == indexPath.row) {
-        PhotoViewController *photoVc = [[PhotoViewController alloc]init];
+        PhotoListViewController *photoVc = [[PhotoListViewController alloc]init];
         UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:photoVc];
-        [self presentViewController:nav animated:YES completion:nil];
-//        LHQImageViewController *imageVc = [[LHQImageViewController alloc]init];
-//        [self presentViewController:imageVc animated:YES completion:nil];
+        
+        //使用异步任务并行队列实现 模态推送和push同步
+        dispatch_async(dispatch_get_global_queue(0, 0), ^{
+            [self presentViewController:nav animated:YES completion:nil];
+        }) ;
+        
+        dispatch_async(dispatch_get_global_queue(0, 0), ^{
+            PhotoViewController *vc = [[PhotoViewController alloc]init];
+            [photoVc.navigationController pushViewController:vc animated:YES];
+        }) ;
     }
 }
 
