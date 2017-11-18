@@ -6,13 +6,13 @@
 //  Copyright © 2017年 lin. All rights reserved.
 //
 
-#import "PhotoViewController.h"
+#import "LHQPhotoViewController.h"
 #import "LHQAblumTool.h"
 #import "LHQCollectionViewCell.h"
-#import "PhotoListViewController.h"
+#import "LHQPhotoListViewController.h"
 
 
-@interface PhotoViewController ()<UICollectionViewDelegate,UICollectionViewDataSource>
+@interface LHQPhotoViewController ()<UICollectionViewDelegate,UICollectionViewDataSource>
 
 @property(nonatomic,strong)UICollectionView                 *photosCollection;
 @property(nonatomic,strong)NSArray                          *dataArray;
@@ -25,7 +25,7 @@
 @end
 
 static NSString *photoCell = @"photosCell_view";
-@implementation PhotoViewController
+@implementation LHQPhotoViewController
 
 
 - (void)viewDidLoad {
@@ -37,8 +37,12 @@ static NSString *photoCell = @"photosCell_view";
     self.selectCellArray = [[NSMutableArray alloc]init];
     self.selectPhotosArray = [[NSMutableArray alloc]init];
     self.dataArray = [[NSMutableArray alloc]init];
-    self.dataArray = [[LHQAblumTool shareAblumTool] getAllAssetInPhotoAblumWithAscending:YES];
-    NSLog(@"data %@",self.dataArray);
+    if (self.photoAssetCollection) {
+        self.dataArray = [[LHQAblumTool shareAblumTool] getAssetsInAssetCollection:self.photoAssetCollection ascending:YES];
+    }else{
+        self.dataArray = [[LHQAblumTool shareAblumTool] getAllAssetInPhotoAblumWithAscending:YES];
+    }
+//    NSLog(@"data %@",self.dataArray);
     
     //控件
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithTitle:@"清除" style:UIBarButtonItemStylePlain target:self action:@selector(cleanSelect)];

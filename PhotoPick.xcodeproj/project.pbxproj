@@ -17,10 +17,11 @@
 		3E3CE4871FBD5C5700B0D5BD /* PhotoPickUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E3CE4861FBD5C5700B0D5BD /* PhotoPickUITests.m */; };
 		3E3CE4971FBD608800B0D5BD /* LHQAblumTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E3CE4961FBD608800B0D5BD /* LHQAblumTool.m */; };
 		3E3CE49B1FBD95B700B0D5BD /* LHQCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E3CE49A1FBD95B700B0D5BD /* LHQCollectionViewCell.m */; };
+		3E78BB2E1FBFCE32008ED3C4 /* LHQPhotoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E78BB2D1FBFCE32008ED3C4 /* LHQPhotoTableViewCell.m */; };
 		7CEE10998B4C531B23F69169 /* libPods-PhotoPickTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FA379035C13034B5D1C34A3 /* libPods-PhotoPickTests.a */; };
 		A02BB71C60BBBDAB8C7142F3 /* libPods-PhotoPick.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C2708363A11D32C452FBD9F /* libPods-PhotoPick.a */; };
-		B573CF681FBF397E00A4C73F /* PhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B573CF661FBF397E00A4C73F /* PhotoViewController.m */; };
-		B573CF691FBF397E00A4C73F /* PhotoListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B573CF671FBF397E00A4C73F /* PhotoListViewController.m */; };
+		B573CF681FBF397E00A4C73F /* LHQPhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B573CF661FBF397E00A4C73F /* LHQPhotoViewController.m */; };
+		B573CF691FBF397E00A4C73F /* LHQPhotoListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B573CF671FBF397E00A4C73F /* LHQPhotoListViewController.m */; };
 		F8C1B63152AAAF44711AE7D4 /* libPods-PhotoPickUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B2856445B2253E4D319C28F /* libPods-PhotoPickUITests.a */; };
 /* End PBXBuildFile section */
 
@@ -65,15 +66,17 @@
 		3E3CE4991FBD95B700B0D5BD /* LHQCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LHQCollectionViewCell.h; sourceTree = "<group>"; };
 		3E3CE49A1FBD95B700B0D5BD /* LHQCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LHQCollectionViewCell.m; sourceTree = "<group>"; };
 		3E4E8DF91FBE81FE00916199 /* PhotoPickPrefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhotoPickPrefix.pch; sourceTree = "<group>"; };
+		3E78BB2C1FBFCE32008ED3C4 /* LHQPhotoTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LHQPhotoTableViewCell.h; sourceTree = "<group>"; };
+		3E78BB2D1FBFCE32008ED3C4 /* LHQPhotoTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LHQPhotoTableViewCell.m; sourceTree = "<group>"; };
 		4FA379035C13034B5D1C34A3 /* libPods-PhotoPickTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PhotoPickTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		67CCE729C80566CC95AE85C3 /* Pods-PhotoPickUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoPickUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PhotoPickUITests/Pods-PhotoPickUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		743BD7D046E9D92FB5523C4A /* Pods-PhotoPick.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoPick.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PhotoPick/Pods-PhotoPick.debug.xcconfig"; sourceTree = "<group>"; };
 		973AE825FC9B5738BCC3EF38 /* Pods-PhotoPickTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoPickTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PhotoPickTests/Pods-PhotoPickTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A6E0134D360D2B5BAE497B37 /* Pods-PhotoPickTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoPickTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PhotoPickTests/Pods-PhotoPickTests.release.xcconfig"; sourceTree = "<group>"; };
-		B573CF641FBF397E00A4C73F /* PhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoViewController.h; sourceTree = "<group>"; };
-		B573CF651FBF397E00A4C73F /* PhotoListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoListViewController.h; sourceTree = "<group>"; };
-		B573CF661FBF397E00A4C73F /* PhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoViewController.m; sourceTree = "<group>"; };
-		B573CF671FBF397E00A4C73F /* PhotoListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoListViewController.m; sourceTree = "<group>"; };
+		B573CF641FBF397E00A4C73F /* LHQPhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LHQPhotoViewController.h; sourceTree = "<group>"; };
+		B573CF651FBF397E00A4C73F /* LHQPhotoListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LHQPhotoListViewController.h; sourceTree = "<group>"; };
+		B573CF661FBF397E00A4C73F /* LHQPhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LHQPhotoViewController.m; sourceTree = "<group>"; };
+		B573CF671FBF397E00A4C73F /* LHQPhotoListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LHQPhotoListViewController.m; sourceTree = "<group>"; };
 		DC6F1E8389A6B8C0EA64A9DE /* Pods-PhotoPick.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoPick.release.xcconfig"; path = "Pods/Target Support Files/Pods-PhotoPick/Pods-PhotoPick.release.xcconfig"; sourceTree = "<group>"; };
 		EBAE6E392453466A54BEFC2E /* Pods-PhotoPickUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoPickUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PhotoPickUITests/Pods-PhotoPickUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -180,6 +183,8 @@
 			children = (
 				3E3CE4991FBD95B700B0D5BD /* LHQCollectionViewCell.h */,
 				3E3CE49A1FBD95B700B0D5BD /* LHQCollectionViewCell.m */,
+				3E78BB2C1FBFCE32008ED3C4 /* LHQPhotoTableViewCell.h */,
+				3E78BB2D1FBFCE32008ED3C4 /* LHQPhotoTableViewCell.m */,
 			);
 			path = cell;
 			sourceTree = "<group>";
@@ -187,10 +192,10 @@
 		3E4E8E031FBEE1DE00916199 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				B573CF651FBF397E00A4C73F /* PhotoListViewController.h */,
-				B573CF671FBF397E00A4C73F /* PhotoListViewController.m */,
-				B573CF641FBF397E00A4C73F /* PhotoViewController.h */,
-				B573CF661FBF397E00A4C73F /* PhotoViewController.m */,
+				B573CF651FBF397E00A4C73F /* LHQPhotoListViewController.h */,
+				B573CF671FBF397E00A4C73F /* LHQPhotoListViewController.m */,
+				B573CF641FBF397E00A4C73F /* LHQPhotoViewController.h */,
+				B573CF661FBF397E00A4C73F /* LHQPhotoViewController.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -501,8 +506,9 @@
 				3E3CE49B1FBD95B700B0D5BD /* LHQCollectionViewCell.m in Sources */,
 				3E3CE4671FBD5C5500B0D5BD /* ViewController.m in Sources */,
 				3E3CE4971FBD608800B0D5BD /* LHQAblumTool.m in Sources */,
-				B573CF681FBF397E00A4C73F /* PhotoViewController.m in Sources */,
-				B573CF691FBF397E00A4C73F /* PhotoListViewController.m in Sources */,
+				B573CF681FBF397E00A4C73F /* LHQPhotoViewController.m in Sources */,
+				3E78BB2E1FBFCE32008ED3C4 /* LHQPhotoTableViewCell.m in Sources */,
+				B573CF691FBF397E00A4C73F /* LHQPhotoListViewController.m in Sources */,
 				3E3CE4721FBD5C5500B0D5BD /* main.m in Sources */,
 				3E3CE4641FBD5C5400B0D5BD /* AppDelegate.m in Sources */,
 			);

@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PhotoViewController : UIViewController
+@interface LHQPhotoViewController : UIViewController
+
+@property(nonatomic,strong)PHAssetCollection *photoAssetCollection;
 
 @end

@@ -6,14 +6,14 @@
 //  Copyright © 2017年 lin. All rights reserved.
 //
 
-#import "PhotoListViewController.h"
-#import "PhotoViewController.h"
+#import "LHQPhotoListViewController.h"
+#import "LHQPhotoViewController.h"
 
-@interface PhotoListViewController ()
+@interface LHQPhotoListViewController ()
 
 @end
 
-@implementation PhotoListViewController
+@implementation LHQPhotoListViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
