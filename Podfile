@@ -18,4 +18,5 @@ target 'PhotoPick' do
   end
 
 pod 'Masonry'
+pod 'MWPhotoBrowser'
 end

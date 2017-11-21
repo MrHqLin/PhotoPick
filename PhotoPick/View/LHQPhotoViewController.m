@@ -10,6 +10,7 @@
 #import "LHQAblumTool.h"
 #import "LHQCollectionViewCell.h"
 #import "LHQPhotoListViewController.h"
+#import "LHQPreviewViewController.h"
 
 
 @interface LHQPhotoViewController ()<UICollectionViewDelegate,UICollectionViewDataSource>
@@ -21,6 +22,10 @@
 @property(nonatomic,strong)UIView                           *bottomView;
 @property(nonatomic,strong)UIButton                         *completeBtn;
 @property(nonatomic,strong)UIButton                         *showPhotoBtn;
+
+@property(nonatomic,strong)MWPhotoBrowser                   *browser;
+@property(nonatomic,strong)NSMutableArray                   *thumbs;
+@property(nonatomic,strong)NSMutableArray                   *selections;
 
 @end
 
@@ -77,7 +82,6 @@ static NSString *photoCell = @"photosCell_view";
         make.right.mas_equalTo(self.bottomView.mas_right).offset(-10);
         make.centerY.mas_equalTo(self.bottomView.mas_centerY);
     }];
-    
     
 }
 
@@ -153,8 +157,12 @@ static NSString *photoCell = @"photosCell_view";
 #pragma mark -- UICollectionViewDelegate
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    
+    LHQPreviewViewController *previewVc = [[LHQPreviewViewController alloc]init];
+    previewVc.photos = self.dataArray;
+    previewVc.currentIndexPath = indexPath;
+    [self.navigationController pushViewController:previewVc animated:YES];
 }
+
 
 
 

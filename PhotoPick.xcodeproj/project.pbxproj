@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E1E5FB21FC26FD2003FEB79 /* LHQPreviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E1E5FB11FC26FD2003FEB79 /* LHQPreviewViewController.m */; };
+		3E27FEA01FC3D128000DDE7E /* LHQPreviewCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E27FE9F1FC3D128000DDE7E /* LHQPreviewCollectionViewCell.m */; };
 		3E3CE4641FBD5C5400B0D5BD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E3CE4631FBD5C5400B0D5BD /* AppDelegate.m */; };
 		3E3CE4671FBD5C5500B0D5BD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E3CE4661FBD5C5500B0D5BD /* ViewController.m */; };
 		3E3CE46A1FBD5C5500B0D5BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E3CE4681FBD5C5500B0D5BD /* Main.storyboard */; };
@@ -45,6 +47,10 @@
 /* Begin PBXFileReference section */
 		2C2708363A11D32C452FBD9F /* libPods-PhotoPick.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PhotoPick.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B2856445B2253E4D319C28F /* libPods-PhotoPickUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PhotoPickUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E1E5FB01FC26FD2003FEB79 /* LHQPreviewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LHQPreviewViewController.h; sourceTree = "<group>"; };
+		3E1E5FB11FC26FD2003FEB79 /* LHQPreviewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LHQPreviewViewController.m; sourceTree = "<group>"; };
+		3E27FE9E1FC3D128000DDE7E /* LHQPreviewCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LHQPreviewCollectionViewCell.h; sourceTree = "<group>"; };
+		3E27FE9F1FC3D128000DDE7E /* LHQPreviewCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LHQPreviewCollectionViewCell.m; sourceTree = "<group>"; };
 		3E3CE45F1FBD5C5400B0D5BD /* PhotoPick.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoPick.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E3CE4621FBD5C5400B0D5BD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3E3CE4631FBD5C5400B0D5BD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -185,6 +191,8 @@
 				3E3CE49A1FBD95B700B0D5BD /* LHQCollectionViewCell.m */,
 				3E78BB2C1FBFCE32008ED3C4 /* LHQPhotoTableViewCell.h */,
 				3E78BB2D1FBFCE32008ED3C4 /* LHQPhotoTableViewCell.m */,
+				3E27FE9E1FC3D128000DDE7E /* LHQPreviewCollectionViewCell.h */,
+				3E27FE9F1FC3D128000DDE7E /* LHQPreviewCollectionViewCell.m */,
 			);
 			path = cell;
 			sourceTree = "<group>";
@@ -196,6 +204,8 @@
 				B573CF671FBF397E00A4C73F /* LHQPhotoListViewController.m */,
 				B573CF641FBF397E00A4C73F /* LHQPhotoViewController.h */,
 				B573CF661FBF397E00A4C73F /* LHQPhotoViewController.m */,
+				3E1E5FB01FC26FD2003FEB79 /* LHQPreviewViewController.h */,
+				3E1E5FB11FC26FD2003FEB79 /* LHQPreviewViewController.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -503,12 +513,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E1E5FB21FC26FD2003FEB79 /* LHQPreviewViewController.m in Sources */,
 				3E3CE49B1FBD95B700B0D5BD /* LHQCollectionViewCell.m in Sources */,
 				3E3CE4671FBD5C5500B0D5BD /* ViewController.m in Sources */,
 				3E3CE4971FBD608800B0D5BD /* LHQAblumTool.m in Sources */,
 				B573CF681FBF397E00A4C73F /* LHQPhotoViewController.m in Sources */,
 				3E78BB2E1FBFCE32008ED3C4 /* LHQPhotoTableViewCell.m in Sources */,
 				B573CF691FBF397E00A4C73F /* LHQPhotoListViewController.m in Sources */,
+				3E27FEA01FC3D128000DDE7E /* LHQPreviewCollectionViewCell.m in Sources */,
 				3E3CE4721FBD5C5500B0D5BD /* main.m in Sources */,
 				3E3CE4641FBD5C5400B0D5BD /* AppDelegate.m in Sources */,
 			);

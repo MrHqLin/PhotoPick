@@ -17,6 +17,7 @@
 
 #import <Masonry.h>
 #import <Photos/Photos.h>
+#import <MWPhotoBrowser.h>
 
 #define SelfView_W [[UIScreen mainScreen] bounds].size.width
 #define SelfView_H [[UIScreen mainScreen] bounds].size.height
